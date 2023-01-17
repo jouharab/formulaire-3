@@ -1,0 +1,75 @@
+<!-- formulaire simple -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulaires</title>
+    <style>
+       body{
+    margin: auto;
+    background: linear-gradient(150deg, black,white);
+   background-size: 100vw 100vh;
+    display: flex; 
+    justify-content: center;
+   margin-top:8%
+    
+}
+
+	input{
+		display: table;
+		margin-bottom: 20px;
+        width:100%
+	}
+    textarea{
+        width:100%
+    }
+    
+    label{
+        color: white;
+        
+    }
+    form{
+        margin-top: 10%;
+        margin-right: 20%;
+    }
+    button{
+        color:red;
+        background-color: transparent;
+        border-color: white;
+        margin-left: 70%;
+        width: 100px;
+        height: 40px;
+        }
+   
+    </style>
+</head>
+<body>
+    <div>
+    <img src="imagesimplon\Imgs\simplon_white.svg" alt="s" id="" height= 100px>
+    
+<form method="post" action="post\post.php" enctype="multipart/form-data" >
+	
+    
+    
+	<label for="prenom" >Votre prénom (*)</label> 
+	<input type="text" name="prenom" id="prenom" placeholder="Veuillez saisir votre prénom ici...">
+	
+	<label for="nom">Votre nom (*)</label> 
+	<input type="text" name="nom" id="nom"  placeholder="Veuillez saisir votre nom ici...">
+	
+	<label for="courriel">Votre courriel (*)</label> 
+	<input type="email" name="email" id="courriel"  placeholder="Veuillez saisir votre courriel ici...">
+	
+	<label for="courriel">Votre message (*)</label> 
+	<textarea name="message" id="message" rows="10" placeholder="Veuillez saisir votre message ici..."></textarea>
+	
+	
+	<button type="submit">
+		Envoyer
+	</button>
+
+</form>
+</div>
+</body>
+</html>
